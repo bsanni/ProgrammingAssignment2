@@ -1,0 +1,28 @@
+## A function to calculate and return the inverse if matrix
+## Function will create a special matrix and cache the inverse so that it can be re-used
+
+makeCacheMatrix <- function(x = matrix()) {
+  inv <-NULL
+  set <-function(y) {
+    x <<-y
+    inv <<-NULL
+  }
+  get <-function() x
+  setInverse <-function(inverse) inv <<-inverse
+  getInverse <-function() inv
+  list(set = set,
+       get = get,
+       setInverse = setInverse,
+       getInverse = getInverse)
+  
+}
+
+
+## This function will Cache the inverse of a special matrix for re-use
+
+cacheSolve <- function(x, ...) {
+  
+  
+  
+        ## Return a matrix that is the inverse of 'x'
+}
